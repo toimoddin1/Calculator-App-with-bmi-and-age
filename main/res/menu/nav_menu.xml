@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/nav_age"
+        android:title="Age Calculation"
+        android:icon="@drawable/ic_age"/>
+    <item
+        android:id="@+id/nav_bmi"
+        android:title="BMI Calculation"
+        android:icon="@drawable/bmi_icon"/>
+
+    <item android:title="App Info">
+
+        <menu>
+            <item
+                android:id="@+id/privacy"
+                android:title="Privacy Policy"
+                android:icon="@drawable/privacy_policy"/>
+
+            <item
+                android:id="@+id/terms_cond"
+                android:title="Terms &amp; Condition"
+                android:icon="@drawable/ic_baseline_security_24"/>
+
+            <item
+                android:id="@+id/other_app"
+                android:title="Others App"
+                android:icon="@drawable/play_store"/>
+            <item
+                android:id="@+id/version"
+                android:title="App Version &amp; Contact us"
+                android:icon="@drawable/ic_baseline_info_24"/>
+        </menu>
+    </item>
+</menu>

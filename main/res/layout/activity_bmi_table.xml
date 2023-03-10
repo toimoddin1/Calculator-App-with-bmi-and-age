@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMI_Table"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/tablehead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI RANGES TABLE"
+        android:textAlignment="center"
+        android:textColor="@color/under_weight"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <TableRow
+        android:background="@color/under_weight"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sl. No."
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Value"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Classification"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </TableRow>
+
+    <TableRow
+        android:background="#F0F7F7"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:paddingLeft="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less than 18.5"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Underweight"
+            android:layout_marginLeft="38dp"
+            android:textSize="18sp"/>
+    </TableRow>
+    <TableRow
+        android:background="#F0F7F7"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:paddingLeft="15dp"
+
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.5 to 24.99"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy"
+            android:layout_marginLeft="38dp"
+            android:textSize="18sp"/>
+    </TableRow>
+    <TableRow
+        android:background="#F0F7F7"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:paddingLeft="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.00 to 29.99"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overweight"
+            android:layout_marginLeft="38dp"
+            android:textSize="18sp"/>
+    </TableRow>
+    <TableRow
+        android:background="#F0F7F7"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:paddingLeft="15dp"
+
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greater than 29.99"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obese"
+            android:layout_marginLeft="38dp"
+            android:textSize="18sp"/>
+    </TableRow>
+
+</TableLayout>

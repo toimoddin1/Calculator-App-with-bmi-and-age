@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw_age"
+    tools:context=".Agecal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectdate"
+            android:textSize="18sp"
+            android:textColor="@color/agecal2"
+            android:textStyle="bold"
+            android:text="@string/date"
+            android:onClick="selectDate"
+            android:background="@drawable/agecal_bg"
+            android:padding="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calbtn"
+            android:text="@string/age"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:visibility="gone"
+            android:background="@drawable/agecal_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showage"
+            android:background="@drawable/agecal_bg"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/agecal2"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:text="@string/date"
+            android:visibility="gone"
+            android:padding="25dp" />
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_main"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
